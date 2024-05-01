@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Images on Button Click</title>
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <h1 style="text-align: center; font-size: 300%; color: blue ;"><b>الملك احمس الأول</b></h1>
+    <div class="container">
+        <button style="background-color: burlywood;" id="toggleImagesBtn">صور الملك</button>
+        <div class="images">
+        <img src="ahmos.jpeg" alt="الملك احمس مع العجلات الحربيه">
+        <img src="ahmos 1.jpeg" alt="صورة 2">
+        <img src="ahmos2.jpeg" alt="صورة 3">
+        <img src="ahmos3.jpeg" alt="صورة 3">
+        <img src="ahmos4.jpeg" alt="صورة 3">
+    </div>
+
+<script src="script.js"></script>
+</head>
+        <style>
+            .container {
+             text-align: center;
+            }
+
+            button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            }
+
+            .images {
+            display: none;
+            overflow-x: scroll; /* لتمكين التمرير الأفقي إذا كانت الصور أكثر من عرض الشاشة */
+            white-space: nowrap; /* لمنع الصور من الانخفاض إلى أسفل */
+            }
+
+            .images img {
+            width: auto; /* لتمكين تعديل الصور على أساس الارتفاع */
+            height: 100%; /* يجعل ارتفاع الصور يمتد ليغطي ارتفاع الحاوية */
+            display: inline-block;
+            margin: 0 10px; /* تضبيط المسافة بين الصور */
+            }
+            p.right{
+                text-align: right;
+                color: black;
+                font-size: 150%;
+                line-height: 1.5em; /* يمكن تغيير هذه القيمة بما يتناسب مع احتياجاتك */
+            }
+            p.ph{
+                text-align: center;
+                color: black;
+                font-size: 150%;
+                line-height: 1.5em; /* يمكن تغيير هذه القيمة بما يتناسب مع احتياجاتك */
+            }
+            body{
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLKPoZOgYjXcR8pM_T_LVEZl_5acNc56IP6qLVet0snP7Ev_5u1_cOZneQDQLMqQkw2Y&usqp=CAU);
+                background-size: cover;
+            }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const toggleImagesBtn = document.getElementById("toggleImagesBtn");
+            const imagesContainer = document.querySelector(".images");
+            let imagesVisible = false;
+
+             toggleImagesBtn.addEventListener("click", function() {
+            imagesVisible = !imagesVisible;
+            if (imagesVisible) {
+             imagesContainer.style.display = "block";
+            } else {
+             imagesContainer.style.display = "none";
+            }
+            });
+            });
+        </script>
+        <nav class="navbar">
+            <div class="navbar__container">
+              
+              <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <ul class="navbar__menu">
+                <li class="navbar__item">
+                  <a href="C:\Users\dabba\Desktop\Coding\html\solo leveling\og\new\index.html  " class="navbar__links">HOME</a>
+                </li>
+                <li class="navbar__item">
+                  <a href=" C:\Users\dabba\Desktop\Coding\html\solo leveling\og\new\Project page 2\ix.html " class="navbar__links">MOSTAFA 1</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="  C:\Users\dabba\Desktop\Coding\html\solo leveling\og\new\last page\X.html " class="navbar__links">MOSTAFA 2</a>
+                </li>
+    </head>
+    <body>
+        <script src="script.js"></script>
+            <hr color="black">
+            <P class="right">الملك أحمس الأول هو كان واحدًا من احدى فراعنة مصر القديمة، وهو مؤسس الأسرة الثامنة عشر، حيث أن الملك أحمس كان عضوًا في العائلة المالكة لبلاد طيبة، وهو ابن الفرعون سقنن رع وشقيقًا للفرعون الأخير الذي كان من الأسرة السابعة عشر</P>
+            <P class="right">وهو الملك كامس، ففي عهد والده أو جده قد تمردت طيبة ضد الهكسوس، حكام مصر السفلى، وعندما كان في سن السابعة من عمره تن قتل والده، أما وهو كان في سن العاشرة توفي أخيه لأسباب مجهولة.</P>
+            <P class="right">حيث أنه لم يحكم غير ثلاث سنوات فقط، ثم تولى أحمس الأول العرش بعد وفاة أخيه، وبعد أن قام بتولية الحكم صار يعرف بإسم نب بتي رع أي سيد القوة رع، أحمس اسم ثيوفوري وهو خليط من قطعة لفظية</P>
+            <hr color="black">
+            <h2>وهناك ايضا بعض العاصمات التاريخيه القديمه و منها </h2>
+            <hr color="black">
+            <P class="ph"><u><b>اون</b></u></P>
+            <img src="ain shams.jpeg" alt="">
+            <P class="right">و هى عين شمس حالياو اصبحن اون عاصمة فى الوحده الاولى و اصبحت عاصمه فى 4242 ق.م</P>
+            <hr color="black">
+            <P class="ph"><u><b>منف</b></u></P>
+            <img src="manf.jpeg" alt=""> 
+            <P class="right">و هى مترهينه حاليا و تقع بالقرب من سقاره و هى من اكبر المدن الاثريه فى منطقة القاهره الكبرى و تعد من عواصم العصر العتيق التى اصبحت عاصمة فى 3200 ق.م و انتهت فى 2180 ق.م</P>
+            <hr color="black">
+            <P class="ph"><u><b>اثيت تاوى</b></u></P>
+            <img src="athet.jpg" alt="">
+            <img src="athet1.jpg" alt="">
+            <p class="right">و هى قريه ريفيه تقع فى منطقة الجيزه داخل مركز العياط  و تمتلك هذه القريه عدة مقابر من اشهرها مقبرة الملك <U>امنمحات الاول</U> و اصبحت اثيت تاوى عاصمه 2180 ق.م و انتهت فى 2060 ق.م</p>
+            <p class="right break">تسمى هذه القريمه اللثت و تعتبر هذه القريه اهم قرى المركز التابع اليه </p>
+            <hr color="black">
+            <p class="ph"><u><b>طيبه</b></u></p>
+            <img src="tyba.jpg" alt="">
+            <p class="right">و هى الأقصر حاليا و تعد الاقصر اكبر المدن التى تحتوى على اثار تاريخيه فى العالم وبها العديد من المعابد و المتاحف</p>
+            <hr color="black">
+            <p style="text-align: center; font-size: 200%;"><b>و هذه هيا ابرز الصور لعواصم مصر القديمه</b></p>
+            <hr color="black">
+
+
+
+
+
+
+    </body>
+</html>
